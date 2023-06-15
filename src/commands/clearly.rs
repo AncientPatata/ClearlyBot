@@ -4,8 +4,10 @@ use serenity::model::prelude::*;
 use serenity::prelude::*;
 
 #[command]
-pub async fn clearly(ctx: &Context, msg: &Message, mut args: Args) -> CommandResult {
-    msg.channel_id.say(&ctx.http, "<:CLearly:1118276862863487026>").await?;
+pub async fn clearly(ctx: &Context, msg: &Message, args: Args) -> CommandResult {
+    msg.channel_id
+        .say(&ctx.http, "<:CLearly:1104839628005060728>")
+        .await?;
 
     Ok(())
 }
